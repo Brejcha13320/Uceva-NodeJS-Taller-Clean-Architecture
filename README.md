@@ -1,4 +1,4 @@
-# Clean Architecture
+# Clean Architecture en NodeJS
 
 ```
 src
@@ -38,10 +38,52 @@ src
 
 ## Paso 1 - Crear Modelos
 
+```
+src//domain/models/
+├── user.model.ts
+└── product.model.ts
+```
+
 ## Paso 2 - Crear Repositorios
+
+```
+src/domain/repositories/
+├── user.repository.ts
+└── product.repository.ts
+```
 
 ## Paso 3 - Crear Casos de Uso
 
+```
+src/application/usecases/
+├── get-all-users.usecase.ts
+└── get-all-products.usecase.ts
+```
+
 ## Paso 4 - Crear Datasources
 
+```
+src/infrastructure/datasource/
+├── user.datasource.ts
+└── product.datasource.ts
+```
+
 ## Paso 5 - Crear Repositorios Implementadores
+
+```
+src/infrastructure/repositories/
+├── user.repository.impl.ts
+└── product.repository.impl.ts
+```
+
+## Paso 6 - Implementar Web (Express – Framework Externo)
+
+```
+src/infrastructure/web/
+├── config/
+├── errors/
+├── interfaces/
+├── controllers/
+├── routes/
+└── server.ts
+```
