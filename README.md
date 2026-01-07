@@ -87,3 +87,22 @@ src/infrastructure/web/
 ├── routes/
 └── server.ts
 ```
+
+# Funcionamiento del Backend
+
+## Ejecutar Backend
+```
+npm run start
+```
+
+## Urls Consumo
+```
+http://localhost:3000
+http://localhost:3000/api/users/{countUsers}
+http://localhost:3000/api/products/{countProducts}
+```
+
+## Url Swagger Docs
+```
+http://localhost:3000/api/docs
+```
