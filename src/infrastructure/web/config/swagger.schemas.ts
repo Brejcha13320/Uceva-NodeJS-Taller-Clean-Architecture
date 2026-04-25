@@ -87,6 +87,16 @@
  *         - status
  *         - createdDate
  *         - itemsCount
+ *     Review:
+ *       type: object
+ *       description: Representa una reseña de un producto
+ *       required:
+ *         - id
+ *         - userId
+ *         - productId
+ *         - rating
+ *         - comment
+ *         - date
  *       properties:
  *         id:
  *           type: number
